@@ -1,4 +1,4 @@
-CubeCreativeDesignJoomlaTemplate
+Cube Creative Design Joomla 3.3 Template
 ================================
 Date:	June 2014 <br>
 Copyright:	Copyright (C) 2014 Cube Creative <br>
