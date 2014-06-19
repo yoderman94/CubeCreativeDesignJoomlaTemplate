@@ -10,7 +10,6 @@ Template Version:	2.16 <br>
 Change Log
 =================================
 2.16 Added links for Apple Icons and Android Icons; Also updated to Font Awesome 4.1 <br>
-
 2.15 Fixed menu overrides to work with bootstrap styling; Added mod_menu to html folder for menu <br>
 2.12 Updated to Font Awesome 4.1, Added Respond JS <br>
 2.11 Updated Menu, changes to Less files <br>
