@@ -1,7 +1,9 @@
 CubeCreativeDesignJoomlaTemplate
 ================================
 Date:	June 2014
+
 Copyright:	Copyright (C) 2014 Cube Creative
+
 License:	GPL
 
 Default Bootstrap Template for Joomla 3.3
