@@ -1,0 +1,45 @@
+//****** Modules Styling ******//
+.rounded_boxes {
+    .border-radius(10px, 10px, 10px, 10px);
+    margin-bottom: 10px;
+    border: 2px solid @gray-lighter; //rgb(170,170,170);
+    .mod_title { 
+        .center;
+        .border-top-left-radius(10px);
+        .border-top-right-radius(10px); 
+        //#gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+        padding: 0px 8px 12px 8px;
+        border-bottom: 2px solid @gray-lighter; //rgb(170,170,170);
+        }
+    h1.mod_title {
+        margin-top: 0px !important;
+        padding-top: 4px;
+        }
+    .mod_content {
+        padding: 4px 8px;
+        //border: 2px solid rgb(170,170,170);
+    }
+}
+
+.three-buttons {
+    padding-bottom: 20px;
+    img {
+        margin: auto;
+        outline: 2px solid @white;
+        outline-offset: -15px;
+    }
+    .three-buttons-title{
+       .center;
+       position: relative;
+       z-index: @zindex-navbar;
+       display: block;
+       margin: auto auto -10%;
+       padding: @nav-link-padding; //15px 10px;
+       width: 90%;
+       outline: 2px solid @white;
+       outline-offset: -10px;
+       background-color: @black;
+       color: @white;
+       font-size: ceil(@font-size-base * 1.5);
+    }
+}

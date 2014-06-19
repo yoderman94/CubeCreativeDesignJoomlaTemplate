@@ -1,0 +1,436 @@
+.formRed {
+	color: @red;
+	font-weight: bold;
+}
+.formError {
+	color: @state-danger-text; //#CF4D4D;
+	font-weight: bold;
+	font-size: @font-size-small; //10px;
+}
+.formNoError {
+	display: none;
+}
+.formField {
+	display: block;
+	overflow: auto;
+}
+.formClr {
+	display: block;
+	clear: both;
+}
+fieldset.formFieldset {
+	margin-bottom: 10px;
+    legend {
+    	padding: 0 2px;
+    	font-weight: bold;
+    	font-size: @font-size-base; //16px;
+    }
+
+    ol.formContainer {
+    	margin: 0;
+    	padding: 0;
+        li {
+        	clear: both;
+        	margin: 0;
+        	padding: 5px;
+        	background-image: none;
+        	list-style: none;
+        }
+    }
+}
+strong.formRequired {
+	margin-left: 3px;
+	font-weight: bold;
+	font-style: normal;
+}
+div.formCaption {
+	display: block;
+	float: left;
+	min-height: 12px;
+	width: 25%;
+}
+div.formBody {
+	display: block;
+	float: left;
+}
+.formFieldset .formBody label {
+	display: inline;
+	margin: 3px;
+}
+.formTableLayout {
+	border: none;
+    > tbody > tr {
+    	border: none;
+    }
+}
+.formTableLeft, .formTableRight {
+	border: none;
+}
+.formTableLayout tr td label {
+	display: inline;
+	margin: 3px;
+}
+.formTableLayout tr.rsform-block, .formTableLayout tr.rsform-block > td {
+	border: 0;
+}
+.formTableLayout tr.rsform-block > td {
+	padding: 3px;
+}
+.form2LinesLayout .formField label {
+	display: inline;
+	margin: 3px;
+}
+div.formDescription {
+	margin-left: 3px;
+	padding-left: 3px;
+	font-weight: normal;
+	font-size: @font-size-base; //11px;
+}
+div.calheader {
+	text-align: center !important;
+}
+.rsformProgress {
+	text-align: center;
+	font-size: @font-size-base; //14px;
+}
+.rsformProgressContainer {
+	overflow: hidden;
+	margin: 0 0 10px !important;
+	width: 100%;
+	height: 4px;
+	border: solid 1px @gray-ccc; //#c7c7c7;
+	background: @white; //#fff;
+}
+.rsformProgressBar {
+	margin: 0px !important;
+	height: 4px;
+	background: @progress-bar-success-bg; //green;
+}
+.rsformVerticalClear {
+	display: block;
+	overflow: hidden;
+}
+p.rsformVerticalClear {
+	margin: 0;
+}
+/* responsive - desktop/default version */
+
+.formResponsive {
+	margin: 0 0 18px;
+    .rsformProgress p {
+    	display: none;
+    }
+    /*.rsformProgressContainer {
+    	height: 18px;
+    	margin-bottom: 18px;
+    	overflow: hidden;
+    	background-color: #f7f7f7;
+    	background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+    	background-image: -ms-linear-gradient(top, #f5f5f5, #f9f9f9);
+    	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+    	background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+    	background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+    	background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
+    	background-repeat: repeat-x;
+    	-webkit-border-radius: 4px;
+    	-moz-border-radius: 4px;
+    	border-radius: 4px;
+     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#f9f9f9', GradientType=0);
+    	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }*/
+    /*.rsformProgressContainer .rsformProgressBar {
+    	width: 0;
+    	height: 18px;
+    	font-size: 12px;
+    	color: #ffffff;
+    	text-align: center;
+    	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    	background-color: #0e90d2;
+    	background-image: -moz-linear-gradient(top, #149bdf, #0480be);
+    	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
+    	background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
+    	background-image: -o-linear-gradient(top, #149bdf, #0480be);
+    	background-image: linear-gradient(top, #149bdf, #0480be);
+    	background-image: -ms-linear-gradient(top, #149bdf, #0480be);
+    	background-repeat: repeat-x;
+     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#149bdf', endColorstr='#0480be', GradientType=0);
+    	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    	-moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    	-webkit-box-sizing: border-box;
+    	-moz-box-sizing: border-box;
+    	-ms-box-sizing: border-box;
+    	box-sizing: border-box;
+    	-webkit-transition: width 0.6s ease;
+    	-moz-transition: width 0.6s ease;
+    	-ms-transition: width 0.6s ease;
+    	-o-transition: width 0.6s ease;
+    	transition: width 0.6s ease;
+    }*/
+    .formHorizontal {
+        input,
+        textarea,
+        select,
+        .formValidation,
+        .uneditable-input,
+        .input-prepend,
+        .input-append {
+        	display: inline-block;
+            margin-bottom: 0;
+            *display: inline;
+            *zoom: 1;
+        }
+        .hide {
+        	display: none;
+        }
+        .rsform-block {
+        	margin-bottom: 18px;
+         *zoom: 1;
+        }
+        .rsform-block:before,
+        .rsform-block:after {
+        	display: table;
+        	content: "";
+        }
+        .rsform-block:after {
+        	clear: both;
+        }
+        .formControlLabel {
+        	float: left;
+        	padding-top: 5px;
+        	width: 140px;
+        	text-align: right;
+        }
+        .formControls {
+        	margin-left: 160px;
+         *display: inline-block;
+         *padding-left: 20px;
+         *margin-left: 0;
+        }
+        .formControls:first-child {
+         *padding-left: 160px;
+        }
+        p.formDescription {
+        	margin-top: 9px;
+        	margin-bottom: 0;
+        }
+        .form-actions {
+        	padding-left: 160px;
+        }
+    }
+    fieldset {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"] {
+    	display: inline-block;
+    	margin-bottom: 9px;
+    	padding: 4px;
+    	height: auto;
+    	color: inherit; //@gray;
+    	font-size: @font-size-base;
+    	line-height: inherit; //18px;
+    	//height: 18px;
+    	
+    }
+    input,
+    textarea {
+    	width: 210px;
+    }
+    textarea {
+    	height: auto;
+    }
+    textarea,
+    input[type="text"],
+    input[type="password"] {
+    	.border-radius( 3px, 3px, 3px, 3px);
+    	.box-shadow( inset 0 1px 1px rgba(0, 0, 0, 0.075));
+    	border: 1px solid @gray-ccc;
+    	background-color: @white;
+    	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    	transition: border linear 0.2s, box-shadow linear 0.2s;
+    	/*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    }
+    textarea:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    select:focus {
+    	outline: 0;
+    	outline: thin dotted \9;
+    	border-color: rgba(61,20,20, 0.8);
+    	/* IE6-9 */
+    	/*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);*/
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+    	margin: 3px 0;
+    	cursor: pointer;
+     *margin-top: 0;
+    	/* IE7 */
+    
+    	line-height: normal;
+    }
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    input[type="radio"],
+    input[type="checkbox"] {
+    	width: auto;
+    }
+    select,
+    input[type="file"] {
+    	height: 28px;
+      /* In IE7, the height of the select element cannot be changed by height, only font-size */
+    
+      *margin-top: 4px;
+    	/* For IE7, add top margin to align select with labels */
+    
+    	line-height: 28px;
+    }
+    select {
+    	width: 220px;
+    	border: 1px solid @gray-bbb;
+    }
+    select.rsform-select-box-small {
+    	width: 60px; //70px;
+    }
+    select[multiple],
+    select[size] {
+    	height: auto;
+    }
+    select:focus,
+    input[type="file"]:focus,
+    input[type="radio"]:focus,
+    input[type="checkbox"]:focus {
+    	outline: thin dotted @gray-dark;
+    	outline: 5px auto -webkit-focus-ring-color;
+    	outline-offset: -2px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+    	float: left;
+    	margin-right: 5px;
+    	/*min-height: 18px;*/
+    	padding-left: 18px;
+    }
+    .formBody {
+    	float: none;
+    }
+    label {
+    	float: left;
+    	margin: 3px 5px 3px 0;
+    	padding: 0px;
+    	height: 18px;
+    }
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+    	.btn;
+    }
+    input[type="submit"] {
+        .btn-primary;
+    }
+    input[type="reset"] {
+        .btn-primary; 
+    }
+    .formError {
+        .has-error;
+    	display: block;
+    	height: 18px;
+    	vertical-align: middle;
+    	//color: #b94a48;
+    	padding-left: 5px;
+    	//font-size: 13px;
+    	//font-weight: normal;
+    	margin: 3px 5px 3px 0;
+    }
+    input.rsform-error,
+    textarea.rsform-error,
+    select.rsform-error {
+    	border-color: @state-danger-border; //#b94a48;
+    	color: @state-danger-text; //#b94a48;
+    }
+    /*input.rsform-error:focus,
+    textarea.rsform-error:focus,
+    select.rsform-error:focus {
+    	border-color: #953b39;
+    	-webkit-box-shadow: 0 0 6px #d59392;
+    	-moz-box-shadow: 0 0 6px #d59392;
+    	box-shadow: 0 0 6px #d59392;
+    }*/
+    input.rsform-calendar-button {
+    	margin-bottom: 3px;
+    }
+}
+
+/* responsive - mobile versions */
+
+@media screen and (max-width: @grid-float-breakpoint) {
+.formResponsive .formHorizontal input[type="checkbox"],  .formResponsive .formHorizontal input[type="radio"] {
+	border: 1px solid @gray-ccc;
+}
+.formResponsive .formHorizontal .rsform-block {
+	float: none;
+	padding-top: 0;
+	width: auto;
+	text-align: left;
+}
+.formResponsive .formHorizontal .formControls {
+	margin-left: 0;
+}
+.formResponsive input[type="text"],  .formResponsive input[type="password"],  .formResponsive textarea,  .formResponsive select {
+	width: 100% !important;
+}
+.formResponsive .formHorizontal .formControlLabel {
+	float: none;
+	padding-top: 0;
+	width: auto;
+	text-align: left;
+}
+}
+.recaptcha_input_area_text {
+	float: none !important;
+}
+.rsformMaps img {
+	max-width: none !important;
+}
+.rsform-map-geolocation {
+	position: absolute;
+	z-index: 999999;
+	margin: 0;
+	width: 455px;
+	height: auto;
+	border: 1px solid #E8E7E7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: none repeat scroll 0 0 #F5F5F5;
+	list-style: none outside none;
+}
+.rsform-map-geolocation li a {
+	display: block;
+	padding: 4px;
+	text-decoration: none;
+	line-height: 20px;
+}
+.rsform-map-geolocation li a:hover {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #fff;
+	text-decoration: none;
+}

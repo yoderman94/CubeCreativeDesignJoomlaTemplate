@@ -1,0 +1,8 @@
+<!--http://forum.joomla.org/viewtopic.php?p=1536381 -->
+<?php $menu = &JSite::getMenu(); ?>
+<?php if ($menu->getActive() == $menu->getDefault()) { ?>
+     this is the front page
+<?php } else { ?>
+    this is not the front page
+<?php } ?>
+

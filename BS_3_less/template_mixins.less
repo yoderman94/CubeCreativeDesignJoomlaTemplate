@@ -1,0 +1,33 @@
+// Single Corner Border Radius
+.border-top-left-radius(@radius) {
+  -webkit-border-top-left-radius: @radius;
+      -moz-border-radius-topleft: @radius;
+          border-top-left-radius: @radius;
+}
+.border-top-right-radius(@radius) {
+  -webkit-border-top-right-radius: @radius;
+      -moz-border-radius-topright: @radius;
+          border-top-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius) {
+  -webkit-border-bottom-right-radius: @radius;
+      -moz-border-radius-bottomright: @radius;
+          border-bottom-right-radius: @radius;
+}
+.border-bottom-left-radius(@radius) {
+  -webkit-border-bottom-left-radius: @radius;
+      -moz-border-radius-bottomleft: @radius;
+          border-bottom-left-radius: @radius;
+}
+
+//.inner-shadow-side Examples
+//.bottom { box-shadow: inset  0px -10px 10px -10px rgba(0, 0, 0, 1); }
+//.left   { box-shadow: inset 10px   0px 10px -10px rgba(0, 0, 0, 1); }
+//.top    { box-shadow: inset  0px  10px 10px -10px rgba(0, 0, 0, 1); }
+//.right  { box-shadow: inset -10px  0px 10px -10px rgba(0, 0, 0, 1); }
+
+.inner-shadow-side(@horizontal: 0, @vertical: 0, @blur: 10px, @spread: -10px, @red: 0, @green: 0, @blue: 0, @alpha: 1) {
+    -webkit-box-shadow: inset @horizontal @vertical @blur @spread rgba(@red, @green, @blue, @alpha);
+    -moz-box-shadow: inset @horizontal @vertical @blur @spread rgba(@red, @green, @blue, @alpha);
+    box-shadow: inset @horizontal @vertical @blur @spread rgba(@red, @green, @blue, @alpha);
+}

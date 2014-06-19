@@ -1,0 +1,15 @@
+<div class="col-xs-2 col-xs-offset-1">
+<a href="tel:(828) 684-3040 " title="Call (828) 684-3040  "><i class="fa fa-phone fa-2x"></i></a>
+</div>
+<div class="col-xs-2">
+<a href="contact-us" title="Contact"><i class="fa fa-envelope fa-2x"></i></a>
+</div>
+<div class="col-xs-2">
+<a href="https://www.facebook.com/" target="_blank" class=""><i class="fa fa-facebook-square fa-2x"></i></a>
+</div>
+<div class="col-xs-2">
+<a href="https://www.linkedin.com/" target="_blank" class=""><i class="fa fa-linkedin-square fa-2x"></i></a>
+</div>
+<div class="col-xs-2">
+<a href="http://www.twitter.com/" target="_blank" class=""><i class="fa fa-twitter-square fa-2x"></i></a>
+</div>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<!-- jQuery -->
+<p>
+    <strong>jQuery resize:</strong>
+      <span id="jqWidth">0</span>,
+    <span id="jqHeight">0</span>    
+</p>
+
+<div id="size"></div>
+   
+<div class="visible-xs">
+<h1>visible-xs (<768px)</h1>
+</div>
+<div class="visible-sm">
+<h1>visible-sm (≥768px)</h1>
+</div>
+<div class="visible-md">
+<h1>visible-md (≥992px)</h1>
+</div>
+<div class="visible-lg">
+<h1>visible-lg (≥1200px)</h1>
+</div>
+
+<script type="text/javascript">
+// http://stackoverflow.com/questions/12781205/live-detect-browser-size-jquery-javascript
+// jQuery
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+    var height = $(window).height();
+	
+	$('#jqWidth').html(width);
+    $('#jqHeight').html(height);
+	
+};
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+</script>
+</body>
+</html>

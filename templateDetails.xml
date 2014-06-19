@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+  <name>Cube Creative</name>
+  <version>2.16</version>
+  <creationDate>9/2013</creationDate>
+  <modificationDate>6/2014</modificationDate>
+  <author>Cube Creative</author>
+  <authorEmail>info@cubecreativedesign.com</authorEmail>
+  <authorUrl>http://www.cubecreativedesign.com</authorUrl>
+  <copyright>Copyright (C) 2014 Cube Creative Design, Inc. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <description>Cube Creative Design Basic Joomla 3.0 Template • Uses Bootstrap 3</description>
+  <files>
+    <folder>css</folder>
+    <folder>js</folder>
+    <folder>images</folder>
+	<folder>html</folder>
+	<folder>fonts</folder>
+    <filename>index.php</filename>
+	<filename>error.php</filename>
+    <filename>templateDetails.xml</filename>
+	<filename>favicon.ico</filename>
+  </files>
+  <positions>
+    <position>header</position>
+    <position>footer</position>
+	<position>footer_mobile</position>
+    <position>menu</position>
+    <position>slideshow</position>
+    <position>social</position>
+    <position>user-1</position>
+    <position>user-2</position>
+    <position>user-3</position>
+    <position>debug</position>
+    <position>position-2</position>
+    <position>position-7</position>
+  </positions>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="logoType" type="list" default="image" label="Logo Type" description="Use Site Logo">
+          <option  value="image">Image</option>
+          <option  value="text">Text</option>
+        </field>
+        <field name="logoText" type="text" default="" size="50" label="Logo" description="Logo Text" />
+        <field name="Address" type="text" default="" size="50" label="Address" description="Physcial Address" />
+        <field name="CityStateZip" type="text" default="" size="50" label="City/State/Zip" description="City/State/Zip" />
+        <field name="PhoneNumber" type="text" default="" size="50" label="Phone Number" description="Phone Number" />
+        <field name="Text_1" type="text" default="" size="50" label="Text 1" description="Input additional text here" />
+        <field name="Text_2" type="text" default="" size="50" label="Text 2" description="Input additional text here" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

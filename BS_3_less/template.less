@@ -1,0 +1,79 @@
+/*!
+ *  Cube Creative Design
+ *  Includes Bootstrap v3.1.1
+ *  Font Awesome 4.1
+ *  LESS Elements 0.9
+ *  Bootstrap Social Buttons v1.0
+ */
+
+//url("../images/image_name.ext")
+/*** Load Our Fonts ***/
+@import "fonts.less";
+
+/*** Bootstrap v3.1 ***/
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+//@import "../bootstrap/variables.less";
+//@import "../bootstrap/mixins.less"; 
+
+//Font Awesome
+@import "font-awesome.less"; //http://fortawesome.github.io/Font-Awesome/
+//@import "font-awesome/font-awesome.less";
+
+//Cube Creative overrides bootstrap
+@import "template_variables.less";
+@import "template_mixins.less"; 
+@import "importbootstrap.less";
+@import "addons/elements.less";  // http://lesselements.com/
+@import "addons/social-buttons-3.less"; // http://noizwaves.github.io/bootstrap-social-buttons/
+@import "addons/rspro.less";
+@import "nav-justified.less";
+
+/********* Start Cube Creative Styles ***********/
+@import "html_styles.less";
+/*** Run Of Site Styles ***/
+@import "runofsite.less";
+/*** Pushdown Classes ***/
+@import "pushdown.less";
+
+/****** Bootstrap Overrides *****/
+.navbar-collapse {
+  max-height: 100%;
+}
+.navbar-default .navbar-toggle {
+    color: @navbar-default-toggle-icon-bar-bg;
+}
+.navbar-inverse .navbar-toggle {
+    color: @navbar-inverse-toggle-icon-bar-bg;
+}
+	
+
+//Add addtional overrides here
+
+/****** Template Styles *******/
+#header {
+    //.img-responsive;
+}
+#content {
+    //background-color: white;
+    //color: black;
+}
+
+/****** Widgetkit ******/
+@import "addons/widgetkit.less";
+
+/****** Modules Styling ******/
+@import "modulesstyling.less";
+
+/****** Footer Styling ******/
+@import "footer.less";
+@import "off-canvas.less";
+
+
+/*** Media Overrides ***/
+@media screen and (min-width: @grid-float-breakpoint) {
+    @import "navbar-hover.less"; //769px
+} 
